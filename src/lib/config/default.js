@@ -15,7 +15,7 @@ export default {
 		},
 		{
 			name: 'Manjeet',
-			type: 'admin',
+			type: 'user',
 			email: 'manjeet.imaniac@gmail.com',
 			password: '0000',
 			shopify_shop: 'dev-abbajabba.myshopify.com',
