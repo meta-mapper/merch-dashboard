@@ -131,7 +131,7 @@
 		</form>
 	</div>
 
-	<div class="absolute top-0 z-0 h-full w-full">
+	<div class="absolute top-0 z-0 h-full w-full overflow-hidden">
 		<SvgLoginBg class="-ms-[50%] h-full opacity-50" />
 	</div>
 </div>
