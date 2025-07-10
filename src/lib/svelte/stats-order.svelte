@@ -33,14 +33,14 @@
 	});
 </script>
 
-<div class="flex h-52 gap-5">
-	<div class="grow basis-0 shrink-0">
+<div class="flex h-52 gap-5 flex-wrap max-sm:flex-col max-sm:h-auto">
+	<div class="shrink-0 grow basis-[48%]">
 		{#key orders}
 			<MetricCard label="Orders" icon="mdi:cart" value={orders} bg="orders.png" />
 		{/key}
 	</div>
 
-	<div class="grow basis-0 shrink-0">
+	<div class="shrink-0 grow basis-[48%]">
 		{#key sales}
 			<MetricCard label="Sales" icon="mdi:cash" value={sales} bg="rupee.png" />
 		{/key}
