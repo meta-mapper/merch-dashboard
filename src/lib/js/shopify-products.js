@@ -17,6 +17,7 @@ export default async ({ session, after = null }) => {
 								id
 								title
 								handle
+								status
 								images(first: 1) {
 									edges {
 										node {
@@ -54,6 +55,7 @@ export default async ({ session, after = null }) => {
 			products: response.data.products.edges.map(({ node }) => ({
 				id: node.id,
 				title: node.title,
+				status: node.status,
 				//
 				images: node.images.edges.map((image) => ({
 					url: image.node.url,

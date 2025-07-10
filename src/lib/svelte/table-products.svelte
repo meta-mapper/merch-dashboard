@@ -55,6 +55,7 @@
 			<tr>
 				<th class="px-10 py-5 text-left font-medium uppercase">Image</th>
 				<th class="px-10 py-5 text-left font-medium uppercase">Product</th>
+				<th class="px-10 py-5 text-left font-medium uppercase">Status</th>
 				<th class="px-10 py-5 text-left font-medium uppercase">Variants</th>
 				<th class="px-10 py-5 text-left font-medium uppercase">Price</th>
 			</tr>
@@ -75,6 +76,7 @@
 							{product.title}
 						</a>
 					</td>
+					<td class="px-10 py-3 font-medium">{product.status}</td>
 					<td class="px-10 py-3 font-medium">{product.variants}</td>
 					<td class="px-10 py-3 font-medium">Rs. {product.price_range} </td>
 				</tr>
