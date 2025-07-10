@@ -7,8 +7,8 @@
 	import defaultConfig from '$lib/config/default';
 	import { user } from '$lib/stores/state';
 
-	let email = $state('manjeet.imaniac@gmail.com');
-	let password = $state('0000');
+	let email = $state('');
+	let password = $state('');
 	let error = $state('-');
 
 	let isNetworkActive = $state(false);
@@ -65,7 +65,7 @@
 		class="m-auto aspect-square h-[470px] rounded-[50px] border border-neutral-700 bg-neutral-800 p-8 max-sm:h-full max-sm:w-full max-sm:rounded-none max-sm:border-0"
 	>
 		<SvgLogo class="mx-auto w-1/2 fill-white" />
-	
+
 		<p class="mt-5 text-center text-sm text-neutral-400">Login to your account</p>
 
 		<form class="flex flex-col" onsubmit={attemptLogin}>

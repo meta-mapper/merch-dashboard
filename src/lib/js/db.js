@@ -2,7 +2,7 @@ import Database from 'better-sqlite3';
 //
 import defaultConfig from '$src/lib/config/default';
 
-const db = new Database(':memory:');
+const db = new Database('database.db');
 
 const run = (query, params = []) => {
 	try {
