@@ -1,6 +1,6 @@
 export default {
 	//
-	support_email: 'jangra8nrj@gmail.com',
+	support_email: 'madeformerch@gmail.com',
 
 	users: [
 		{
