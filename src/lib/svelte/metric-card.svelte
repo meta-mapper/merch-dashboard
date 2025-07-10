@@ -8,8 +8,7 @@
 	<div class="relative z-10 flex w-full flex-col items-end justify-center p-10">
 		<Icon {icon} class="shrink-0" width="40" />
 		<h2 class="mt-2 text-4xl font-bold">{value}</h2>
-		<p class="mt-1 text-neutral-400 font-bold">{label}</p>
-		<p class="mt-0 text-xs text-neutral-400 ">This month</p>
+		<p class="mt-1 font-bold text-neutral-400">{label} this month</p>
 	</div>
 
 	<div class="absolute top-0 -left-10 z-0 aspect-square h-full">

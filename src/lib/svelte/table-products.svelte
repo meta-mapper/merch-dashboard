@@ -10,6 +10,18 @@
 	let pageInfo = $state({ hasNextPage: true, endCursor: null });
 	let error = $state(null);
 
+	const getProductStatusClass = (status) => {
+		//
+		switch (status.toLowerCase()) {
+			case 'active':
+				return 'bg-green-100 text-green-800 border-green-200';
+			case 'draft':
+				return 'bg-yellow-100 text-yellow-800 border-yellow-200';
+			default:
+				return 'bg-gray-100 text-gray-800 border-gray-200';
+		}
+	};
+
 	const refreshData = async () => {
 		//
 		if (isDataLoading) {
@@ -76,9 +88,17 @@
 							{product.title}
 						</a>
 					</td>
-					<td class="px-10 py-3 font-medium">{product.status}</td>
-					<td class="px-10 py-3 font-medium">{product.variants}</td>
-					<td class="px-10 py-3 font-medium">Rs. {product.price_range} </td>
+				
+					<td class="px-10 py-3 font-medium">
+						<span
+							class={`rounded-full px-2 py-0.5 text-sm capitalize ${getProductStatusClass(product.status)}`}
+						>
+							{product.status.toLowerCase()}
+						</span>
+					</td>
+
+					<td class="px-10 py-3 font-medium text-center">{product.variants}</td>
+					<td class="px-10 py-3 font-medium w-52">Rs. {product.price_range} </td>
 				</tr>
 			{/each}
 		</tbody>

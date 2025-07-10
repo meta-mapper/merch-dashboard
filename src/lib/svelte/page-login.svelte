@@ -3,12 +3,13 @@
 
 	import SvgLogo from '$lib/svelte/svg-logo.svelte';
 	import Loader from '$lib/svelte/loader.svelte';
+	import SvgLoginBg from '$lib/svelte/svg-login-bg.svelte';
 
 	import defaultConfig from '$lib/config/default';
 	import { user } from '$lib/stores/state';
 
-	let email = $state('');
-	let password = $state('');
+	let email = $state('manjeet.imaniac@gmail.com');
+	let password = $state('11111111');
 	let error = $state('-');
 
 	let isNetworkActive = $state(false);
@@ -62,7 +63,7 @@
 
 <div class="flex h-full">
 	<div
-		class="m-auto aspect-square h-[470px] rounded-[50px] border border-neutral-700 bg-neutral-800 p-8 max-sm:h-full max-sm:w-full max-sm:rounded-none max-sm:border-0"
+		class="relative z-10 m-auto aspect-square h-[470px] rounded-[50px] border border-neutral-700 bg-neutral-800 p-8 max-sm:h-full max-sm:w-full max-sm:rounded-none max-sm:border-0"
 	>
 		<SvgLogo class="mx-auto w-1/2 fill-white" />
 
@@ -118,5 +119,9 @@
 				</a>
 			</div>
 		</form>
+	</div>
+
+	<div class="absolute top-0 z-0 h-full w-full">
+		<SvgLoginBg class="-ms-[50%] h-full opacity-50" />
 	</div>
 </div>

@@ -1,6 +1,6 @@
 export default {
 	//
-	support_email: 'madeformerch@gmail.com',
+	support_email: 'help@madeformerch.com',
 
 	users: [
 		{
@@ -17,7 +17,7 @@ export default {
 			name: 'Manjeet',
 			type: 'user',
 			email: 'manjeet.imaniac@gmail.com',
-			password: '00000000',
+			password: '11111111',
 			shopify_shop: 'dev-abbajabba.myshopify.com',
 			shopify_api_key: 'addb9ad5da421c5f60128e8adbc8d891',
 			shopify_api_secret: '60ad92aca3682edefb5376b07a32a7af',
