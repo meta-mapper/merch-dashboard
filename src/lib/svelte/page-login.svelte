@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte-on-mount';
 	import { goto } from '$app/navigation';
 
 	import SvgLogo from '$lib/svelte/svg-logo.svelte';
@@ -8,8 +9,8 @@
 	import defaultConfig from '$lib/config/default';
 	import { user } from '$lib/stores/state';
 
-	let email = $state('manjeet.imaniac@gmail.com');
-	let password = $state('11111111');
+	let email = $state('');
+	let password = $state('');
 	let error = $state('-');
 
 	let isNetworkActive = $state(false);
@@ -59,6 +60,15 @@
 			error = 'Network error. Please try again later.';
 		}
 	};
+
+	onMount(() => {
+		//
+		if (document.location.hostname === 'localhost') {
+			//
+			email = 'manjeet.imaniac@gmail.com';
+			password = '11111111';
+		}
+	});
 </script>
 
 <div class="flex h-full">
