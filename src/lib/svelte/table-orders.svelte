@@ -94,7 +94,7 @@
 				orders = [];
 				pageInfo = { hasNextPage: true, endCursor: null };
 
-				refershData();
+				refreshData();
 			}
 		});
 
