@@ -1,5 +1,5 @@
 <script>
-	import { onMount } from 'svelte-on-mount';
+	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 
 	import SvgLogo from '$lib/svelte/svg-logo.svelte';
