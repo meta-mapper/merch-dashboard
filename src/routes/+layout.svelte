@@ -36,7 +36,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href="/images/favicon.png" />
+	<link rel="icon" href="/images/favicon.svg" />
 </svelte:head>
 
 <div class="layout h-screen bg-black text-white">
